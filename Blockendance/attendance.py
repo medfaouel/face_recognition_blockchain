@@ -158,7 +158,7 @@ def trackImage():
         cv2.destroyAllWindows()
 def ListToBlockchain():
     
-    file= open("AttendanceFile.csv")
+    file= open("Blockendance\AttendanceFile.csv")
     next(file)
 
     resultat=[]
@@ -197,16 +197,16 @@ label4.place(x=95, y=205)
 takeImageBtn = tk.Button(window, command=takeImage, background="yellow", fg="black", text="CAPTURE IMAGE",
                          activebackground="red",
                          width=15, height=3, font=('Helvetica', 12))
-takeImageBtn.place(x=130, y=360)
+takeImageBtn.place(x=80, y=360)
 trainImageBtn = tk.Button(window, command=trainImage, background="yellow", fg="black", text="TRAINED IMAGE",
                           activebackground="red",
                           width=15, height=3, font=('Helvetica', 12))
-trainImageBtn.place(x=340, y=360)
+trainImageBtn.place(x=250, y=360)
 trackImageBtn = tk.Button(window, command=trackImage, background="yellow", fg="black", text="TRACK IMAGE", width=12,
                           activebackground="red", height=3, font=('Helvetica', 12))
-trackImageBtn.place(x=550, y=360)
-bruhButton = tk.Button(window, command=ListToBlockchain, background="yellow", fg="black", text="making a list of present ppl", width=12,
+trackImageBtn.place(x=420, y=360)
+bruhButton = tk.Button(window, command=ListToBlockchain, background="yellow", fg="black", text="PRESENCE LIST", width=16,
                           activebackground="red", height=3, font=('Helvetica', 12))
-bruhButton.place(x=700, y=360)
+bruhButton.place(x=565, y=360)
 
 window.mainloop()

@@ -14,7 +14,7 @@ window.geometry('800x500')
 
 dialog_title = 'QUIT'
 dialog_text = "are you sure?"
-window.configure(background='green')
+window.configure(background='steel blue')
 window.grid_rowconfigure(0, weight=1)
 window.grid_columnconfigure(0, weight=1)
 
@@ -170,42 +170,42 @@ def ListToBlockchain():
 
 
 
-label1 = tk.Label(window, background="green", fg="black", text="Name :", width=10, height=1,
+label1 = tk.Label(window, background="steel blue", fg="white", text="Name :", width=10, height=1,
                   font=('Helvetica', 16))
 label1.place(x=83, y=40)
-std_name = tk.Entry(window, background="yellow", fg="black", width=25, font=('Helvetica', 14))
+std_name = tk.Entry(window, background="white", fg="white", width=25, font=('Helvetica', 14))
 std_name.place(x=280, y=41)
-label2 = tk.Label(window, background="green", fg="black", text="Matric Number :", width=14, height=1,
+label2 = tk.Label(window, background="steel blue",fg="white", text="Matric Number :", width=14, height=1,
                   font=('Helvetica', 16))
 label2.place(x=100, y=90)
-std_number = tk.Entry(window, background="yellow", fg="black", width=25, font=('Helvetica', 14))
+std_number = tk.Entry(window, background="white", fg="black", width=25, font=('Helvetica', 14))
 std_number.place(x=280, y=91)
 
-clearBtn1 = tk.Button(window, background="red", command=clear, fg="white", text="CLEAR", width=8, height=1,
+clearBtn1 = tk.Button(window, background="light sea green", command=clear, fg="white", text="CLEAR", width=8, height=1,
                       activebackground="red", font=('Helvetica', 10))
 clearBtn1.place(x=580, y=42)
-clearBtn2 = tk.Button(window, background="red", command=clear2, fg="white", text="CLEAR", width=8,
+clearBtn2 = tk.Button(window, background="light sea green", command=clear2, fg="white", text="CLEAR", width=8,
                       activebackground="red", height=1, font=('Helvetica', 10))
 clearBtn2.place(x=580, y=92)
 
-label3 = tk.Label(window, background="green", fg="red", text="Notification", width=10, height=1,
-                  font=('Helvetica', 20, 'underline'))
+label3 = tk.Label(window, background="steel blue", fg="white", text="Notification", width=10, height=1,
+                  font=('Helvetica', 20))
 label3.place(x=320, y=155)
-label4 = tk.Label(window, background="yellow", fg="black", width=55, height=4, font=('Helvetica', 14, 'italic'))
+label4 = tk.Label(window, background="white", fg="black", width=55, height=4, font=('Helvetica', 14, 'italic'))
 label4.place(x=95, y=205)
 
-takeImageBtn = tk.Button(window, command=takeImage, background="yellow", fg="black", text="CAPTURE IMAGE",
+takeImageBtn = tk.Button(window, command=takeImage, background="light sea green", fg="white", text="CAPTURE IMAGE",
                          activebackground="red",
                          width=15, height=3, font=('Helvetica', 12))
 takeImageBtn.place(x=80, y=360)
-trainImageBtn = tk.Button(window, command=trainImage, background="yellow", fg="black", text="TRAINED IMAGE",
+trainImageBtn = tk.Button(window, command=trainImage, background="light sea green", fg="white", text="TRAINED IMAGE",
                           activebackground="red",
                           width=15, height=3, font=('Helvetica', 12))
 trainImageBtn.place(x=250, y=360)
-trackImageBtn = tk.Button(window, command=trackImage, background="yellow", fg="black", text="TRACK IMAGE", width=12,
+trackImageBtn = tk.Button(window, command=trackImage, background="light sea green", fg="white", text="TRACK IMAGE", width=12,
                           activebackground="red", height=3, font=('Helvetica', 12))
 trackImageBtn.place(x=420, y=360)
-bruhButton = tk.Button(window, command=ListToBlockchain, background="yellow", fg="black", text="PRESENCE LIST", width=16,
+bruhButton = tk.Button(window, command=ListToBlockchain, background="light sea green", fg="white", text="PRESENCE LIST", width=16,
                           activebackground="red", height=3, font=('Helvetica', 12))
 bruhButton.place(x=565, y=360)
 

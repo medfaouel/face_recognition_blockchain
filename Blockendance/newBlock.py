@@ -27,7 +27,14 @@ def add_block(form, data, blockchain):
     block_to_add = next_block(previous_block, data)
     blockchain.append(block_to_add)
     previous_block = block_to_add
-    return "Block #{} has been added to the blockchain!".format(block_to_add.index)
+    bc_string = str(data[0]) + " " + str(data[1]) + " " + str(data[2])
+    for i in range(len(data[4])):
+        if (i != len(data[4]) - 1):
+            bc_string += " " + str(i + 1) + ":" + str(data[4][i]) + ","
+        else:
+            bc_string += " " + str(i + 1) + ":" + str(data[4][i])
+    print(bc_string)
+    return bc_string
     
 def auto_add_block(form, data, blockchain):
     data.append([])
@@ -45,5 +52,12 @@ def auto_add_block(form, data, blockchain):
     block_to_add = next_block(previous_block, data)
     blockchain.append(block_to_add)
     previous_block = block_to_add
-    return "Block #{} has been added to the blockchain!".format(block_to_add.index)
+    bc_string = str(data[0]) +" " + str(data [1]) +" " +str(data [2])
+    for i in range(len(data[4])):
+        if(i!=len(data[4])-1):
+            bc_string += " " + str(i+1) + ":" + str(data[4][i]) + ","
+        else:
+            bc_string += " " + str(i+1) + ":" + str(data[4][i])
+    print(bc_string)
+    return bc_string
 

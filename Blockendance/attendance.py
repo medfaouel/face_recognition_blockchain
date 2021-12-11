@@ -158,7 +158,7 @@ def trackImage():
         cv2.destroyAllWindows()
 def ListToBlockchain():
     
-    file= open("Blockendance\AttendanceFile.csv")
+    file= open("AttendanceFile.csv")
     next(file)
 
     resultat=[]

@@ -9,11 +9,14 @@ from block import *
 from genesis import create_genesis_block
 from newBlock import auto_add_block, next_block, add_block
 from getBlock import find_records
+from flask_cors import CORS,cross_origin
 from attendance import ListToBlockchain
-
+import mimetypes
+mimetypes.add_type('application/javascript', '.js', True)
 
 # Flask declarations
 app = Flask(__name__)
+CORS(app)
 response = Response()
 response.headers.add('Cache-Control', 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0')
 
